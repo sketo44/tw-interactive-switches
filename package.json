@@ -6,10 +6,12 @@
     "scripts": {
         "dev": "vite",
         "build": "tsc --noEmit && vite build",
+    "test": "pnpm build && node test-switch.mjs",
         "preview": "vite preview"
     },
     "devDependencies": {
         "@salla.sa/twilight-bundles": "^0.1.0",
+        "happy-dom": "^21.0.4",
         "typescript": "^7.0.2",
         "vite": "^5.0.0"
     },

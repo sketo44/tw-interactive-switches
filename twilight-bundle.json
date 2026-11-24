@@ -4,11 +4,37 @@
         "en": "Interactive Switches"
     },
     "description": {
-        "ar": "",
-        "en": ""
+        "ar": "قسم مقارنة تفاعلي بأربعة أنماط مفاتيح قابلة للتخصيص داخل صفحات المتجر.",
+        "en": "An interactive comparison section with four customizable switch styles for store pages."
     },
     "author_email": "mr2looly@gmail.com",
     "support_url": "",
     "repository": "https://github.com/sketo44/tw-interactive-switches",
-    "components": []
+    "components": [
+        {
+            "title": "مقارنة تفاعلية",
+            "icon": "sicon-check-circle",
+            "name": "interactive-switch",
+            "key": "b8f72124-0d8a-4e12-9e46-b607c0d7da19",
+            "fields": [
+                {
+                    "id": "style", "type": "items", "source": "Manual", "label": "شكل المفتاح", "format": "dropdown-list", "required": true,
+                    "options": [
+                        { "label": "شمس ونجوم", "value": "rishi", "key": "rishi" },
+                        { "label": "شمس وهلال", "value": "jk", "key": "jk" },
+                        { "label": "تشغيل وإيقاف", "value": "andrew", "key": "andrew" },
+                        { "label": "ليل هادئ", "value": "madflows", "key": "madflows" }
+                    ],
+                    "selected": [{ "label": "شمس ونجوم", "value": "rishi", "key": "rishi" }]
+                },
+                { "id": "title", "type": "string", "label": "عنوان القسم", "format": "text", "required": true, "value": "شاهد الفرق" },
+                { "id": "off_label", "type": "string", "label": "عنوان الحالة الأولى", "format": "text", "required": true, "value": "قبل" },
+                { "id": "off_text", "type": "string", "label": "وصف الحالة الأولى", "format": "textarea", "required": true, "value": "شاهد الفرق بالضغط على المفتاح." },
+                { "id": "on_label", "type": "string", "label": "عنوان الحالة الثانية", "format": "text", "required": true, "value": "بعد" },
+                { "id": "on_text", "type": "string", "label": "وصف الحالة الثانية", "format": "textarea", "required": true, "value": "تجربة جديدة تناسبك." },
+                { "id": "link_text", "type": "string", "label": "نص الرابط الاختياري", "format": "text", "required": false, "value": "اكتشف المزيد" },
+                { "id": "link_url", "type": "string", "label": "رابط الوجهة", "format": "url", "required": false }
+            ]
+        }
+    ]
 }
